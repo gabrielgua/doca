@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Confirma que é você?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet" />
+  </head>
+  <body style="margin: 0; padding: 0; background: #eef5fb; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background: #eef5fb;">
+      <tr>
+        <td align="center" style="padding: 36px 16px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width: 480px;">
+            <tr>
+              <td style="padding: 0 4px 18px; font-size: 18px; font-weight: 800; letter-spacing: -0.02em; color: #0f172a;">
+                <span style="display: inline-block; width: 30px; height: 30px; margin-right: 6px; border-radius: 10px; background: #0284c7; color: #ffffff; text-align: center; line-height: 30px; font-size: 16px; vertical-align: middle;">d</span>
+                <span style="vertical-align: middle;">doca</span>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 32px; border: 1px solid #e2e8f0; border-radius: 24px; background: #ffffff;">
+                <div style="width: 56px; height: 56px; border-radius: 18px; background: #e0f2fe; text-align: center; line-height: 56px; font-size: 28px;">👋</div>
+                <h1 style="margin: 20px 0 0; font-size: 22px; line-height: 1.3; font-weight: 800; letter-spacing: -0.02em; color: #0f172a;">Confirma que é você?</h1>
+          <p style="margin: 12px 0 0; font-size: 15px; line-height: 1.6; color: #475569;">Falta um clique pra ativar sua conta na Doca. Depois disso, é só caixa saindo e chegando.</p>
+          
+          <table role="presentation" cellpadding="0" cellspacing="0" style="margin: 28px 0 0;">
+            <tr>
+              <td style="border-radius: 14px; background: #0284c7;">
+                <a href="{{ .ConfirmationURL }}" style="display: inline-block; padding: 14px 26px; font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 800; color: #ffffff; text-decoration: none; border-radius: 14px;">Confirmar email &rarr;</a>
+              </td>
+            </tr>
+          </table>
+          <p style="margin: 24px 0 0; font-size: 12px; line-height: 1.6; color: #94a3b8;">
+            Botão tímido? Copie e cole no navegador:<br />
+            <a href="{{ .ConfirmationURL }}" style="color: #0284c7; word-break: break-all;">{{ .ConfirmationURL }}</a>
+          </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 18px 8px 0; font-size: 12px; line-height: 1.6; color: #94a3b8; text-align: center;">
+                Não criou conta nenhuma? Pode ignorar este email.<br />
+                Doca · envios pra Amazon sem dor de cabeça
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
