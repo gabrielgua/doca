@@ -152,6 +152,10 @@ components and wrap them in a `Base*` component so the rest of the app never imp
 
 ## Git and CI
 
+- Work happens on `release/next` (the default branch) or branches off it. Nothing is committed to
+  `main` directly: a ruleset blocks pushes, force pushes and deletion, and `main` only changes
+  through a pull request from `release/next` (checked by the Pull request source workflow) with
+  Secret scan, Commit lint and Source branch passing.
 - Commit messages follow Conventional Commits (`feat: ...`, `fix: ...`, `chore: ...`), checked by
   the Commit lint workflow with `commitlint.config.mjs`.
 - The Secret scan workflow runs Gitleaks over the full history on every push and pull request.
